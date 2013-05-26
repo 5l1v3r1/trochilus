@@ -2,7 +2,7 @@ exports.list = function(req, res) {
     var blogs = req['beans'].manager.loadAll();
     var tag = req.params.tag;
     res.render('list', {
-        title: 'startuplogs.com - 创业观察、记录、实践',
+        title: '创业观察、思考、实践 - startuplogs.com',
         articles: !tag ? blogs.articles : blogs.tags[tag].articles,
         tags: blogs.tags,
         tag: tag
