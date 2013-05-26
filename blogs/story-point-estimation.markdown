@@ -3,7 +3,7 @@ layout: post
 title: "如何预估工作量"
 date: 2013-01-24 20:15
 comments: true
-categories: 项目
+categories: 项目管理
 ---
 我们的开发节奏是每周发布一个版本。这个版本应该包含尽可能多的新的功能，但不能超出团队的能力。这需要比较强的工作量预估的能力。我们采用story point来预估工作量。
 
