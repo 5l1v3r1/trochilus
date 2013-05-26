@@ -1,0 +1,27 @@
+doctype 5
+html(lang="zh-CN")
+  head
+    title= title
+    block headScript
+    block style
+      link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    div.container
+      div.header
+        div.nav
+        a.logo(href="/")
+      div.content
+        div.sides
+          div.side-title
+            | 标签
+          div.side-content
+            each val, tag in tags
+              a.tag(href="/tags/#{tag}") #{tag} (#{val.count})
+        div.main-wrapper
+          block content
+      div.footer
+        | Powered by TROCHILUS, Hosted by 
+        a(href="http://www.linode.com/?r=c1716dc5f6d450521788829b2bc82c0f8f688a0d") linode.com
+    block footScript
+      script(src='/javascripts/jquery.js')
+      script(src='/javascripts/underscore.js')

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.article
+    h1.article-title #{article.title}
+    div.article-content
+      p !{article.content}
+    div.article-info
+      span #{article.time} 发表在
+      each tag in article.tags
+        a.tag(href="/tags/#{tag}") #{tag}

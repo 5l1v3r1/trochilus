@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  if locals.tag
+    div.tag-title 标签：#{tag}
+  each article in articles
+    div.article
+      h1
+        a.article-title(href="/posts/#{article.url}") #{article.title}
+      div.article-content
+        p !{article.content}
+      div.article-info
+        span #{article.time} 发表在
+        each tag in article.tags
+          a.tag(href="/tags/#{tag}") #{tag}
