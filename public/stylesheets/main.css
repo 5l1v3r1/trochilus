@@ -81,15 +81,18 @@ a.logo:hover {
 }
 .article>h1 {
     padding: 8px 0;
-    font-size: 1.5em;
+    font-size: 1.6em;
     border-bottom: 1px solid #eee;
     font-weight: normal;
 }
 .article h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .article h3 {
     font-size: 1.1em;
+}
+.article img {
+    max-width: 100%;
 }
 .article-title {
     padding: 8px 10px !important;

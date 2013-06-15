@@ -31,6 +31,7 @@ if (!module.parent) {
 
     app.use(app.router);
     app.use(express.static(path.join(serverConfig.root, 'public')));
+    app.use('/attachments', express.static(path.join(serverConfig.root, 'attachments')));
 
 
     // set router
