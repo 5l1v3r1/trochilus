@@ -17,6 +17,11 @@ html(lang="zh-CN")
           div.side-content
             each val, tag in tags
               a.tag(href="/tags/#{tag}") #{tag} (#{val.count})
+          div.side-title
+            | 链接
+          div.side-content
+            a.tag(href="http://yuantiku.com") 猿题库
+            a.tag(href="http://blog.devtang.com") 唐巧的技术博客
         div.main-wrapper
           block content
       div.footer
