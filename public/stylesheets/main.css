@@ -6,7 +6,7 @@ html, body {
     min-height: 100%;
     background-color: #CCC;
     color: #333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Oxygen, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
 }
 a {
     text-decoration: none;
@@ -25,7 +25,7 @@ strong {
     margin: 0 auto;
     padding-bottom: 60px;
     background-color: #f3f6f9;
-    background-color: #fcfcfc;
+    background-color: #fff;
     position: relative;
     box-shadow: 2px 0px 2px #aaa,-2px 0px 2px #aaa;
 }
@@ -76,13 +76,14 @@ a.logo:hover {
     border-bottom: 2px solid #eee;
 }
 .article {
-    background-color: #fcfcfc;
+    background-color: #fff;
     margin-bottom: 30px;
 }
 .article>h1 {
-    padding: 12px 0;
-    font-size: 2em;
+    padding: 8px 0;
+    font-size: 1.5em;
     border-bottom: 1px solid #eee;
+    font-weight: normal;
 }
 .article h2 {
     font-size: 1.3em;
@@ -91,10 +92,10 @@ a.logo:hover {
     font-size: 1.1em;
 }
 .article-title {
-    padding: 12px 10px !important;
+    padding: 8px 10px !important;
 }
 .article-content {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5em;
     padding: 0 10px;
 }
@@ -111,7 +112,7 @@ a.tag {
 .sides {
     float: right;
     width: 310px;
-    background-color: #fcfcfc;
+    background-color: #fff;
 }
 .side-title {
     padding: 10px;
