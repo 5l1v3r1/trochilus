@@ -22,7 +22,7 @@ Nginx会接管所有的静态资源请求。最开始Nginx是直接从NFS上读�
 ### MySQL和Redis
 目前猿题库将数据存储在MySQL和Redis上。不同类型的数据存储在不同的服务上，例如用户数据以及各种练习报告都存储在MySQL中，而做题过程中的答案数据（数量巨大，单个记录数据量极小，适合使用list存储）则保存在Redis上。
 
-当前阶段猿题库更看重数据的Reliability，其次才会考虑整个服务的Availability，服务偶尔down一下还OK，但数据永久性丢失则不可接受。猿题库将MySQL和Redis配置为master-slave结构。猿题库会定时从slave上dump完整的数据，并每天对数据做**跨机房备份**（实际上就是将机房的数据rsync到办公室的的Hadoop机群上）。另外，猿题库服务器都做了RAID（1和5）。
+当前阶段猿题库更看重数据的Reliability，其次才会考虑整个服务的Availability，服务偶尔down一下还OK，但数据永久性丢失则不可接受。猿题库将MySQL和Redis配置为master-slave结构。猿题库会定时从slave上dump完整的数据，并每天对数据做**跨机房备份**（实际上就是将机房的数据rsync到办公室的Hadoop机群上）。另外，猿题库服务器都做了RAID（1和5）。
 
 而由于当前服务器压力并不大，且猿题库对MySQL存在read after write的需求，因此也就没有对MySQL的slave进行读取。
 

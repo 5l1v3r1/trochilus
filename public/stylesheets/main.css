@@ -20,9 +20,9 @@ strong {
     font-weight: bold;
 }
 .container {
-    width: 1120px;
+    width: 1000px;
     min-height: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
     padding-bottom: 60px;
     background-color: #f3f6f9;
     background-color: #fff;
@@ -64,8 +64,8 @@ a.logo:hover {
     /*border-top: 1px solid #fff;*/
 }
 .main-wrapper {
-    width: 750px;
-    margin-right: 320px;
+    width: 660px;
+    margin-right: 280px;
 }
 .tag-title {
     padding: 12px 10px 22px;
@@ -82,7 +82,6 @@ a.logo:hover {
 .article>h1 {
     padding: 8px 0;
     font-size: 1.6em;
-    border-bottom: 1px solid #eee;
     font-weight: normal;
 }
 .article h2 {
@@ -114,15 +113,14 @@ a.tag {
 }
 .sides {
     float: right;
-    width: 310px;
+    width: 250px;
     background-color: #fff;
 }
 .side-title {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
+    padding: 10px 10px 0;
 }
 .side-content {
-    padding: 10px 0;
+    padding: 10px 0 20px;
 }
 .side-content>a.tag {
     padding: 5px 10px;
@@ -132,7 +130,7 @@ a.tag {
 .footer {
     position: absolute;
     bottom:0;
-    width: 1100px;
+    width: 980px;
     height: 60px;
     line-height: 60px;
     font-size: 16px;
