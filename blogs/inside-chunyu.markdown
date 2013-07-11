@@ -39,6 +39,6 @@ categories: [开发]
 用户量逐渐增加，服务器的压力也逐渐增加。接下来春雨会在服务性能优化上投入一些力量，计划中的包括提高PUSH服务器的处理能力，以及引入Redis改善Django内置的Session机制的性能。
 
 ## 团队及工作方式
-目前春雨开发者共9个人，服务器端、iOS端和Android端各3个人。使用SVN管理代码，使用Review Board来Review代码，使用[Redmine](http://redmine.org)做项目管理和Bug管理，使用[Moin Wiki](http://moinmo.in/)做文档管理。
+目前春雨开发者共9个人，服务器端、iOS端和Android端各3个人。使用SVN管理代码，使用Review Board来Review代码，使用[Redmine](http://redmine.org)做项目管理和Bug跟踪。春雨最初使用[Moin Wiki](http://moinmo.in/)做文档管理，后来逐渐迁移到Redmine自带的wiki系统上来了。
 
 春雨一直在寻找优秀人才。曾柏毅提到下半年春雨会重点进行校园招聘，有兴趣的同学们可以考虑一下。
