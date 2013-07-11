@@ -11,5 +11,6 @@ exports.blogConfig = {
 exports.routers = [
     'get::/::blog::list',
     'get::/tags/:tag::blog::list',
-    'get::/posts/:articleUrl::blog::article'
+    'get::/posts/:articleUrl::blog::article',
+    'get::/preview/:articleUrl::blog::preview'
 ];

@@ -28,3 +28,23 @@ exports.article = function(req, res) {
         });
     }
 }
+
+exports.preview = function(req, res) {
+    var blogs = req['beans'].manager.loadAll(true);
+    var articleUrl = req.params.articleUrl;
+    var article = null;
+    for (var i = 0; i < blogs.articles.length; i++) {
+        if (articleUrl == blogs.articles[i].url) {
+            article = blogs.articles[i];
+        }
+    }
+    if (!article) {
+        res.send(404);
+    } else {
+        res.render('article', {
+            title: article.title,
+            article: article,
+            tags: blogs.tags
+        });
+    }
+}

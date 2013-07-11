@@ -4,12 +4,15 @@ var moment = require('moment');
 moment.lang('zh-cn');
 
 module.exports = function(options) {
-    function loadAll() {
+    function loadAll(preview) {
         articles = [];
         tags = {};
 
         var files = fs.readdirSync(options.blogdir);
         for (var i = 0; i < files.length; i++) {
+            if (!preview && files[i].indexOf('preview') != -1) {
+                continue;
+            }
             var article = loadOne(options.blogdir + '/' + files[i]);
             if (article) {
                 article.url = files[i].replace('.markdown', '');
