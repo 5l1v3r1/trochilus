@@ -6,7 +6,7 @@ html, body {
     min-height: 100%;
     background-color: #CCC;
     color: #333;
-    font-family: Oxygen, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 a {
     text-decoration: none;
@@ -111,6 +111,13 @@ a.tag {
     padding: 2px;
     margin-right: 3px;
 }
+div.tag {
+    padding: 5px 10px;
+    margin-right: 3px;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
 .sides {
     float: right;
     width: 250px;

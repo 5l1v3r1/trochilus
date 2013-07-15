@@ -22,6 +22,10 @@ html(lang="zh-CN")
           div.side-content
             a.tag(href="http://yuantiku.com") 猿题库
             a.tag(href="http://blog.devtang.com") 唐巧的技术博客
+          div.side-title
+            | 介绍
+          div.side-content
+            div.tag 本网站由<a href="http://yuantiku.com">猿题库</a>联合创始人<a href="http://weibo.com/bineon">@郭常圳</a>创办，专门八卦创业公司产品技术实践。如果你愿意分享创业过程中的各种实践，请联系我。
         div.main-wrapper
           block content
       div.footer
@@ -32,3 +36,15 @@ html(lang="zh-CN")
     block footScript
       script(src='/javascripts/jquery.js')
       script(src='/javascripts/underscore.js')
+      | <script type="text/javascript">
+      |    var _gaq = _gaq || [];
+      |    _gaq.push(['_setAccount', 'UA-38535571-1']);
+      |    _gaq.push(['_setDomainName', 'startuplogs.com']);
+      |    _gaq.push(['_trackPageview']);
+
+      |    (function() {
+      |      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      |      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      |      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      |    })();
+      |  </script>
