@@ -9,7 +9,8 @@ block content
         a.article-title(href="/posts/#{article.url}") #{article.title}
       div.article-content
         p !{article.content}
+        p.eof -EOF#{article.len}- 
       div.article-info
-        span #{article.time} 发表在
+        span #{article.time}发表在
         each tag in article.tags
           a.tag(href="/tags/#{tag}") #{tag}

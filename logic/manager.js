@@ -41,7 +41,8 @@ module.exports = function(options) {
         if (meta) {
             meta = meta[0];
             article = {
-                content:  marked(str.substring(meta.length))
+                content:  marked(str.substring(meta.length)),
+                len: str.length - meta.length
             };
             var headers = parse(meta.split('\n'));
             article.title = headers['title'].substring(1, headers['title'].length - 1);
