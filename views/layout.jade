@@ -5,6 +5,7 @@ html(lang="zh-CN")
     block headScript
     block style
       link(rel='stylesheet', href='/stylesheets/main.css')
+      link(rel='alternate', type='application/rss+xml', title='startuplogs.com', href='/feed')
   body
     div.container
       div.header
@@ -20,6 +21,7 @@ html(lang="zh-CN")
           div.side-title
             | 链接
           div.side-content
+            a.tag(href="/feed") RSS订阅本站
             a.tag(href="http://yuantiku.com") 猿题库
             a.tag(href="http://blog.devtang.com") 唐巧的技术博客
           div.side-title

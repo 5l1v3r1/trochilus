@@ -1,3 +1,31 @@
+var RSS = require('rss');
+
+exports.feed = function(req, res) {
+    var blogs = req['beans'].manager.loadAll();
+    var feed = new RSS({
+        title: 'startuplogs.com',
+        description: '创业的观察、思考、实践',
+        feed_url: 'http://startuplogs.com/feed',
+        site_url: 'http://startuplogs.com',
+        author: 'Changzhen Guo',
+        copyright: '&copy; 2013 startuplogs.com',
+        pubDate: new Date()
+    });
+
+    for (var i in blogs.articles) {
+        var article = blogs.articles[i];
+        feed.item({
+            title:  article.title,
+            description: article.content,
+            url: '/posts/' + article.url,
+            categories: article.tags,
+            date: article.createdTime
+        });
+    }
+
+    res.set('Content-Type', 'text/xml');
+    res.send(feed.xml());
+}
 exports.list = function(req, res) {
     var blogs = req['beans'].manager.loadAll();
     var tag = req.params.tag;

@@ -11,6 +11,7 @@
     "less-middleware": "*",
     "underscore": "*",
     "marked": "*",
+    "rss": "*",
     "moment": "*"
   }
 }

@@ -12,5 +12,6 @@ exports.routers = [
     'get::/::blog::list',
     'get::/tags/:tag::blog::list',
     'get::/posts/:articleUrl::blog::article',
-    'get::/preview/:articleUrl::blog::preview'
+    'get::/preview/:articleUrl::blog::preview',
+    'get::/feed::blog::feed'
 ];
